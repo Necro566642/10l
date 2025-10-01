@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Сайт 10Л класу</title>
+  <style>
+    :root{
+      --bg:#0a0f1a;
+      --card:#111827;
+      --accent:#93a1a3;
+      --muted:#93a1a3;
+      --text:#e5e7eb;
+      --header:#1e293b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:var(--bg);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+    .container{width:min(1100px,94%);margin:0 auto;padding:20px 0}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      background:var(--header);
+      border-radius:12px;
+      margin-bottom:20px;
+    }
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:50px;
+      height:50px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#0ea5e9);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#000;
+      box-shadow:0 4px 12px rgba(0,0,0,0.5);
+    }
+    h1{font-size:24px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
+    .hero{padding:20px;background:#111827;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.5);}
+    h2,h3{margin-top:0;color:var(--accent);}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{border:1px solid #1e293b;padding:8px;text-align:left;font-size:14px}
+    th{background:#1f2937}
+    .btn{
+      display:inline-block;
+      padding:4px 8px;
+      background:var(--accent);
+      color:#000;
+      border-radius:6px;
+      font-size:12px;
+      text-decoration:none;
+      transition:0.2s;
+    }
+    .btn:hover{opacity:0.8;}
+    .btn.disabled{background:#475569;color:#94a3b8;pointer-events:none;}
+    .card{
+      background:#111827;
+      padding:16px;
+      border-radius:12px;
+      margin-bottom:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    }
+    footer{
+      margin-top:auto;
+      padding:16px 0;
+      color:var(--muted);
+      text-align:center;
+      font-size:13px;
+    }
+  </style></head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">10Л</div>
+        <div>
+          <h1>Сайт 10Л класу</h1>
+          <p class="lead">Розклад та матеріали для учнів 10-Л класу.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Розклад 8:00–8:45
+		    8:55–9:40
+                    9:50–10:35
+                    10:50–11:35
+                    11:50–12:35
+                    12:40–13:25 </h2>
+        <h3>Понеділок</h3>
+        <table>
+          <tr><td>Українська література 8:00–8:45</td><td><a class="btn" href="https://meet.google.com/ked-wbuz-bkz">Онлайн урок</a></td></tr>
+          <tr><td>Історія України 8:55–9:40</td><td><a class="btn" href="https://meet.google.com/ewk-rjdu-rxq">Онлайн урок</a></td></tr>
+          <tr><td>Інформатика 9:50–10:35</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Англійська мова 10:50–11:35
+</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Математика 11:50–12:35</td><td><a class="btn" href="https://meet.google.com/pbv-todf-wmq?pli=1">Онлайн урок</a></td></tr>
+          <tr><td>Громадянська освіта 12:40–13:25</td><td><a class="btn" href="https://meet.google.com/ugr-bxbm-ywi">Онлайн урок</a></td></tr>
+        </table>
+
+        <h3>Вівторок</h3>
+        <table>
+          <tr><td>Захист України 8:00–8:45</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Громадянська освіта 8:55–9:40</td><td><a class="btn" href="https://meet.google.com/ugr-bxbm-ywi">Онлайн урок</a></td></tr>
+          <tr><td>Біологія 9:50–10:35</td><td><a class="btn" href="http://meet.google.com/bkb-xhph-vfx">Онлайн урок</a></td></tr>
+          <tr><td>Українська мова 10:50–11:35</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Година спілкування 11:50–12:35</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Мистецтво / Всесвітня історія 12:40–13:25</td><td><a class="btn" href="https://meet.google.com/ewk-rjdu-rxq">Онлайн урок</a></td></tr>
+        </table>
+
+        <h3>Середа</h3>
+        <table>
+          <tr><td>Історія України 8:00–8:45</td><td><a class="btn" href="https://meet.google.com/ewk-rjdu-rxq">Онлайн урок</a></td></tr>
+          <tr><td>Англійська мова 8:55–9:40</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Фізична культура 9:50–10:35</td><td><a class="btn" href="https://meet.google.com/qdn-noim-xrw">Онлайн урок</a></td></tr>
+          <tr><td>Мистецтво / Всесвітня історія  10:50–11:35</td><td><a class="btn" href="https://meet.google.com/ewk-rjdu-rxq">Онлайн урок</a></td></tr>
+          <tr><td>Географія 11:50–12:35</td><td><a class="btn" href="https://meet.google.com/pqf-rtni-ymy">Онлайн урок</a></td></tr>
+          <tr><td>Хімія 12:40–13:25</td><td><a class="btn" href="meet.google.com/bkb-xhph-vfx">Онлайн урок</a></td></tr>
+        </table>
+
+        <h3>Четвер</h3>
+        <table>
+          <tr><td>Зарубіжна література 8:55–9:40</td><td><a class="btn" href="https://meet.google.com/ecg-cxwe-oud">Онлайн урок</a></td></tr>
+          <tr><td>Біологія 9:50–10:35</td><td><a class="btn" href="http://meet.google.com/bkb-xhph-vfx">Онлайн урок</a></td></tr>
+          <tr><td>Математика 10:50–11:35</td><td><a class="btn" href="https://meet.google.com/pbv-todf-wmq?pli=1">Онлайн урок</a></td></tr>
+          <tr><td>Українська мова 11:50–12:35</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Хімія / Географія 12:40–13:25</td><td><a class="btn" href="https://meet.google.com/bkb-xhph-vfx">Онлайн урок</a></td></tr>
+        </table>
+
+        <h3>П’ятниця</h3>
+        <table>
+          <tr><td>Англійська мова 8:55–9:40</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Фізична культура 9:50–10:35</td><td><a class="btn" href="https://meet.google.com/qdn-noim-xrw">Онлайн урок</a></td></tr>
+          <tr><td>Захист України 10:50–11:35</td><td><a class="btn disabled" href="#">Помилка, чекайте оновлення</a></td></tr>
+          <tr><td>Фізика 11:50–12:35</td><td><a class="btn" href="meet.google.com/dsq-owmq-cnk">Онлайн урок</a></td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Контакти</h3>
+      <p class="author">Автори сайту: asorder & necro566642</p>
+    </section>
+
+  </div>
+
+  <footer>
+    © <span id="year"></span> Сайт 10Л класу — Автори: asorder & necro566642
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
